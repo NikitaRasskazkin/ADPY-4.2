@@ -9,7 +9,7 @@ class Yandex_Api_Test(unittest.TestCase):
         with open('fixture.json', encoding='utf-8') as f:
             tests = json.load(f)
         url = "https://cloud-api.yandex.net/v1/disk/resources"
-        headers = {"Authorization": "AgAAAAAT5t7wAADLWx88rJ0vE0BrqbQ9yqe5L4Y"}
+        headers = {"Authorization": ""}
         for path, status_code in tests:
             with self.subTest():
                 params = {"path": path}
